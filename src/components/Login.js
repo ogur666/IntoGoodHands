@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
 
-const Home = () => {
+const Login = () => {
 
     return (
-        <div>Home</div>
+        <div>Zaloguj się</div>
     )
 };
 
-export default Home;
+export default Login;

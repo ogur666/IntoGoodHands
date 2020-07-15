@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+.home-start, .home-three-columns, .home-about-us, .home-foundations, .home-contact {
+  color: $font-color;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.active {
+  //color: red;
+  border: 1px solid $font-color;
+}
+
+.start-background {
+  background-image: url("../../assets/Home-Hero-Image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50%;
+  height: 100%;
+}
+.start-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  font-size: 2rem;
+  p {
+    margin: 10px;
+  }
+  .buttons {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a{
+    position: center;
+    font-size: 2.3rem;
+    font-weight: lighter;
+    margin: 20px;
+    padding: 10px 40px;
+    width: 310px;
+    height: 120px;
+    background: none;
+    border: 1px solid $font-color;
+    color: $font-color;
+    white-space: pre-wrap;
+    text-align: center;
+  }
+}
+
+.home-menu {
+  display: flex;
+  li {
+    margin: 20px;
+    padding: 10px;
+    a{
+      //margin: 30px 20px;
+      padding: 10px;
+      //color: $font-color;
+
+    }
+  }
+}
+.home-header {
+  width: 70vw;
+  position: fixed;
+  color: $font-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 10px 0;
+  section a {
+    margin: 20px;
+    padding: 10px;
+    color: $panel-color;
+    font-size: .8rem;
+  }
+}
+.decoration {
+  background-image: url("../../assets/Decoration.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50%;
+  height: 30px;
+  margin: 10px 0;
+}
+.home-three-columns {
+
+}
