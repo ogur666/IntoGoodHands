@@ -15,24 +15,24 @@ const Home = () => {
             <header >
                 <nav className="home-header">
                     <section>
-                        <NavLink activeClassName="active" exact to="/logowanie" > Zaloguj się</NavLink>
-                        <NavLink activeClassName="active" to="/rejestracja" > Załóż konto</NavLink>
+                        <NavLink exact to="/logowanie" > Zaloguj się</NavLink>
+                        <NavLink to="/rejestracja" > Załóż konto</NavLink>
                     </section>
                     <ul className="home-menu">
-                        <li><Link activeClass="active" className="test1" to="test1" spy={true} smooth={true} duration={500} >Start</Link></li>
-                        <li><Link activeClass="active" className="test2" to="test2" spy={true} smooth={true} duration={500} >O co chodzi?</Link></li>
-                        <li><Link activeClass="active" className="test3" to="test3" spy={true} smooth={true} duration={500} >O nas</Link></li>
-                        <li><Link activeClass="active" className="test4" to="test4" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
-                        <li><Link activeClass="active" className="test5" to="test5" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
+                        <li><Link activeClass="active" to="element1" spy={true}  smooth={true} duration={500} >Start</Link></li>
+                        <li><Link activeClass="active" to="element2" spy={true} offset={-100} smooth={true} duration={500} >O co chodzi?</Link></li>
+                        <li><Link activeClass="active" to="element3" spy={true} smooth={true} duration={500} >O nas</Link></li>
+                        <li><Link activeClass="active" to="element4" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
+                        <li><Link activeClass="active" to="element5" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <Element name="test1" className="element" ><HomeHeader/></Element>
-                <Element name="test2" className="element" ><HomeThreeColumns/></Element>
-                <Element name="test3" className="element" ><HomeAboutUs/></Element>
-                <Element name="test4" className="element" ><HomeFoundations/></Element>
-                <Element name="test5" className="element" ><HomeContact/></Element>
+                <Element name="element1" ><HomeHeader/></Element>
+                <Element name="element2" ><HomeThreeColumns/></Element>
+                <Element name="element3" ><HomeAboutUs/></Element>
+                <Element name="element4" ><HomeFoundations/></Element>
+                <Element name="element5" ><HomeContact/></Element>
             </main>
         </>
     )
