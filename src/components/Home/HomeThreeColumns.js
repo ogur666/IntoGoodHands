@@ -47,17 +47,23 @@ const HomeThreeColumns = () => {
                 <div>
                     <h1>{countBags}</h1>
                     <p>ODDANYCH WORKÓW</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo id nulla non congue. Nam maximus odio lacinia dictum egestas.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo id nulla non congue. Nam maximus odio lacinia dictum egestas.
+                    </p>
                 </div>
                 <div>
                     <h1>{countFoundations}</h1>
                     <p>WSPARTYCH ORGANIZACJI</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo id nulla non congue. Nam maximus odio lacinia dictum egestas.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo id nulla non congue. Nam maximus odio lacinia dictum egestas.
+                    </p>
                 </div>
                 <div>
                     <h1>{countCollections}</h1>
                     <p>ZORGANIZOWANYCH ZBIÓREK</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo id nulla non congue. Nam maximus odio lacinia dictum egestas.</p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo id nulla non congue. Nam maximus odio lacinia dictum egestas.
+                    </p>
                 </div>
             </section>
             <section className="short-info">

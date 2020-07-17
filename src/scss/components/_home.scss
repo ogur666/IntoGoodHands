@@ -183,3 +183,40 @@ header {
     }
   }
 }
+.home-about-us {
+  section {
+    width: 50%;
+  }
+}
+.about-us-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $screen-color;
+  h2 {
+    font-weight: lighter;
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin: 20px;
+    padding: 0 100px;
+    line-height: 40px;
+  }
+}
+.about-us-signature {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  padding-right: 100px;
+}
+.about-us-background {
+  background-image: url("../../assets/People.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  //height: 100%;
+}
