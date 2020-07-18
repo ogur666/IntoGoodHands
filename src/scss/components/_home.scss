@@ -220,3 +220,89 @@ header {
   background-position: center;
   //height: 100%;
 }
+
+
+.home-contact {
+  background-image: url("../../assets/Background-Contact-Form.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact-background, .contact-text {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255,255,255,.7);
+}
+.contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h2 {
+    margin-top: 160px;
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+  form {
+    width: 80%;
+    margin: 30px;
+    padding: 20px 70px;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    div {
+    display: flex;
+    }
+    label {
+      display: block;
+      //text-align: center;
+      width: 50%;
+      font-size: 1rem;
+    }
+    input, textarea {
+      font-size: 1rem;
+      background-color: rgba(255,255,255,.1);
+      width: 90%;
+      border: none;
+      border-bottom: 2px solid rgb(220, 220, 220);
+      outline: none;
+      cursor: pointer;
+    }
+    input {
+      height: 2rem;
+    }
+    input::placeholder, textarea::placeholder {
+      color: rgb(220, 220, 220);
+    }
+    textarea {
+      height: 120px;
+      width: 190%;
+      resize: none;
+    }
+    button {
+      align-self: flex-end;
+      width: 130px;
+      height: 50px;
+      font-size: 1.2rem;
+      font-weight: lighter;
+      background-color: rgba(255,255,255,.1);
+      margin: 10px 20px;
+      &:hover {
+        cursor: pointer;
+        background-color: $screen-color;
+      }
+    }
+  }
+}
+footer {
+  margin-top: 160px;
+  align-self: flex-end;
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  font-size: .8rem;
+  a {
+    padding-right:40px;
+  }
+}
