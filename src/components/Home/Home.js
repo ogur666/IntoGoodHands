@@ -19,20 +19,20 @@ const Home = () => {
                         <NavLink to="/rejestracja" > Załóż konto</NavLink>
                     </section>
                     <ul className="home-menu">
-                        <li><Link activeClass="active" to="element1" spy={true}  smooth={true} duration={500} >Start</Link></li>
-                        <li><Link activeClass="active" to="element2" spy={true} offset={-100} smooth={true} duration={500} >O co chodzi?</Link></li>
-                        <li><Link activeClass="active" to="element3" spy={true} smooth={true} duration={500} >O nas</Link></li>
-                        <li><Link activeClass="active" to="element4" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
-                        <li><Link activeClass="active" to="element5" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
+                        <li><Link activeClass="active" to="header" spy={true}  smooth={true} duration={500} >Start</Link></li>
+                        <li><Link activeClass="active" to="three-columns" spy={true} offset={-100} smooth={true} duration={500} >O co chodzi?</Link></li>
+                        <li><Link activeClass="active" to="about-us" spy={true} smooth={true} duration={500} >O nas</Link></li>
+                        <li><Link activeClass="active" to="foundations" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
+                        <li><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} >Kontakt</Link></li>
                     </ul>
                 </nav>
             </header>
             <main>
-                <Element name="element1" ><HomeHeader/></Element>
-                <Element name="element2" ><HomeThreeColumns/></Element>
-                <Element name="element3" ><HomeAboutUs/></Element>
-                <Element name="element4" ><HomeFoundations/></Element>
-                <Element name="element5" ><HomeContact/></Element>
+                <Element name="header" ><HomeHeader/></Element>
+                <Element name="three-columns" ><HomeThreeColumns/></Element>
+                <Element name="about-us" ><HomeAboutUs/></Element>
+                <Element name="foundations" ><HomeFoundations/></Element>
+                <Element name="contact" ><HomeContact/></Element>
             </main>
         </>
     )
