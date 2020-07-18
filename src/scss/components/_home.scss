@@ -213,20 +213,18 @@ header {
   margin: 20px;
   padding-right: 100px;
 }
-.about-us-background {
-  background-image: url("../../assets/People.jpg");
+.about-us-background, .home-contact {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  //height: 100%;
+}
+.about-us-background {
+  background-image: url("../../assets/People.jpg");
 }
 
 
 .home-contact {
   background-image: url("../../assets/Background-Contact-Form.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .contact-background, .contact-text {
   width: 50%;
@@ -239,7 +237,7 @@ header {
   align-items: center;
   flex-direction: column;
   h2 {
-    margin-top: 160px;
+    margin-top: 140px;
     font-weight: lighter;
     font-size: 2rem;
   }
@@ -275,7 +273,7 @@ header {
       color: rgb(220, 220, 220);
     }
     textarea {
-      height: 120px;
+      height: 100px;
       width: 190%;
       resize: none;
     }
@@ -295,9 +293,9 @@ header {
   }
 }
 footer {
-  margin-top: 160px;
+  margin-top: 140px;
   align-self: flex-end;
-  width: 120%;
+  width: 115%;
   display: flex;
   justify-content: space-between;
   text-align: right;
@@ -305,4 +303,18 @@ footer {
   a {
     padding-right:40px;
   }
+}
+.submit-message {
+  color: green;
+  width: 30%;
+  height: 3rem;
+}
+.error {
+  height: .7rem;
+  color: red;
+  font-size: .7rem;
+  line-height: .7rem;
+}
+.error-line {
+  border-bottom: 2px solid red !important;
 }
