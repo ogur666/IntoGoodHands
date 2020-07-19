@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useLayoutEffect} from 'react';
+import React, {useState, useLayoutEffect} from 'react';
 import {Link} from "react-router-dom";
 import icon1 from "../../assets/Icon-1.svg";
 import icon2 from "../../assets/Icon-2.svg";
@@ -14,8 +14,6 @@ const HomeThreeColumns = () => {
     let [countCollections, setCountCollections] = useState(0);
     let [position, setPosition] = useState(0);
 
-// console.log(position);
-// console.log(counter);
     useLayoutEffect(() => {
         function updatePosition() {
             setPosition(window.pageYOffset);

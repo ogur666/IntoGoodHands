@@ -13,8 +13,11 @@ const HomeContact = () => {
     const [errorNameClass, setErrorNameClass] = useState("");
     const [errorEmailClass, setErrorEmailClass] = useState("");
     const [errorMessageClass, setErrorMessageClass] = useState("");
-    const [isClicked, setClicked] = useState(false);
 
+    const validateEmail = (email) => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -24,36 +27,41 @@ const HomeContact = () => {
         setErrorNameClass("");
         setErrorEmailClass("");
         setErrorMessageClass("");
-        setClicked(true);
+        const newData = {
+          name: name,
+          email: email,
+          message: message
+        };
 
         if (name.includes(" ") || name.length === 0) {
             setNameError("Podane imię jest nieprawidłowe!");
             setErrorNameClass("error-line")
         }
-        if (!email.includes("@")) {
+        if (validateEmail(email) === false) {
             setEmailError("Podany email jest nieprawidłowy!");
             setErrorEmailClass("error-line");
         }
-        if (message.length <120) {
+        if (message.length < 120) {
             setMessageError("Wiadomość musi mieć co najmniej 120 znaków!");
             setErrorMessageClass("error-line");
         }
-    };
-
-    const handleSend = () => {
-        if (messageError.length === 0 &&
-            nameError.length === 0 &&
-            emailError.length === 0 &&
-            isClicked === true
+        if ((!name.includes(" ") || name.length > 0) &&
+            validateEmail(email) === true &&
+            message.length >= 120
         ) {
             setName("");
             setEmail("");
             setMessage("");
-            // return (
-            //     <>
-            //         Wiadomość została wysłana! Wkrótce się skontaktujemy.
-            //     </>
-            // )
+            fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+                method: "POST",
+                body: JSON.stringify(newData),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+            })
+                .then((resp) => resp.json())
+                .then(data => console.log(data))
+                .catch((err) => console.log(err));
             setSubmitMessage("Wiadomość została wysłana! Wkrótce się skontaktujemy.")
         }
     };

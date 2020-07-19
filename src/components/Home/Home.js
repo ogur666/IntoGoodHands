@@ -1,11 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import HomeHeader from "./HomeHeader";
 import HomeThreeColumns from "./HomeThreeColumns";
 import HomeAboutUs from "./HomeAboutUs";
 import HomeFoundations from "./HomeFoundations";
 import HomeContact from "./HomeContact";
 import {NavLink} from "react-router-dom";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Element } from 'react-scroll'
 
 
 const Home = () => {
