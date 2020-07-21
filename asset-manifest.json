@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/into-good-hands/static/css/main.400101ee.chunk.css",
+    "main.js": "/into-good-hands/static/js/main.46938cc7.chunk.js",
+    "main.js.map": "/into-good-hands/static/js/main.46938cc7.chunk.js.map",
+    "runtime-main.js": "/into-good-hands/static/js/runtime-main.af13ac0a.js",
+    "runtime-main.js.map": "/into-good-hands/static/js/runtime-main.af13ac0a.js.map",
+    "static/js/2.b5ac685d.chunk.js": "/into-good-hands/static/js/2.b5ac685d.chunk.js",
+    "static/js/2.b5ac685d.chunk.js.map": "/into-good-hands/static/js/2.b5ac685d.chunk.js.map",
+    "index.html": "/into-good-hands/index.html",
+    "precache-manifest.93e4b6009333555cc940b595d4101be3.js": "/into-good-hands/precache-manifest.93e4b6009333555cc940b595d4101be3.js",
+    "service-worker.js": "/into-good-hands/service-worker.js",
+    "static/css/main.400101ee.chunk.css.map": "/into-good-hands/static/css/main.400101ee.chunk.css.map",
+    "static/js/2.b5ac685d.chunk.js.LICENSE.txt": "/into-good-hands/static/js/2.b5ac685d.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/into-good-hands/static/media/People.6fa36651.jpg",
+    "static/media/Facebook.svg": "/into-good-hands/static/media/Facebook.df65b6c0.svg",
+    "static/media/Icon-1.svg": "/into-good-hands/static/media/Icon-1.91147906.svg",
+    "static/media/Icon-2.svg": "/into-good-hands/static/media/Icon-2.db91e33e.svg",
+    "static/media/Icon-3.svg": "/into-good-hands/static/media/Icon-3.2cfe9dfe.svg",
+    "static/media/Icon-4.svg": "/into-good-hands/static/media/Icon-4.436df0aa.svg",
+    "static/media/Instagram.svg": "/into-good-hands/static/media/Instagram.703479fd.svg",
+    "static/media/Signature.svg": "/into-good-hands/static/media/Signature.e54cfcfc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af13ac0a.js",
+    "static/js/2.b5ac685d.chunk.js",
+    "static/css/main.400101ee.chunk.css",
+    "static/js/main.46938cc7.chunk.js"
+  ]
+}
