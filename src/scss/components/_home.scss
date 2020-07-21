@@ -319,7 +319,9 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   h2 {
+    text-align: center;
     margin-top: 140px;
     font-weight: lighter;
     font-size: 2rem;
@@ -374,6 +376,20 @@ header {
       }
     }
   }
+  .start {
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px;
+    color: $font-color;
+    font-size: 1rem;
+    width: 160px;
+    height: 50px;
+    border: 1px solid $font-color;
+    &:hover {
+      //cursor: pointer;
+      background-color: $screen-color;
+    }
+  }
 }
 footer {
   margin-top: 120px;
@@ -400,4 +416,7 @@ footer {
 }
 .error-line {
   border-bottom: 2px solid red !important;
+}
+.message {
+  width: 150%;
 }

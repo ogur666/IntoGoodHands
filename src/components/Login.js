@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import {NavLink} from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Login = () => {
     const [email, setEmail] = useState("");
@@ -40,11 +42,11 @@ const Login = () => {
                         <NavLink to="/rejestracja" > Załóż konto</NavLink>
                     </section>
                     <ul className="home-menu">
-                        <li><a href="/">Start</a></li>
-                        <li><a href="/#three-columns" >O co chodzi?</a></li>
-                        <li><a href="/#about-us">O nas</a></li>
-                        <li><a href="/#foundations">Fundacje i organizacje</a></li>
-                        <li><a href="/#contact">Kontakt</a></li>
+                        <li><Link to="/">Start</Link></li>
+                        <li><Link to="/#three-columns" >O co chodzi?</Link></li>
+                        <li><Link to="/#about-us">O nas</Link></li>
+                        <li><Link to="/#foundations">Fundacje i organizacje</Link></li>
+                        <li><Link to="/#contact">Kontakt</Link></li>
                     </ul>
                 </nav>
             </header>

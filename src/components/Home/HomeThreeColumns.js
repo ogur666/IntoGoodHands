@@ -21,7 +21,7 @@ const HomeThreeColumns = () => {
         window.addEventListener('scroll', updatePosition);
         updatePosition();
 
-        if (position >= 160) {
+        if (position >= 220) {
             var intervalId = setInterval(()=> {
                 if (countBags <= bags) {
                     setCountBags(() => countBags++)
