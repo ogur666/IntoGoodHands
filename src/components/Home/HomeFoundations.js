@@ -50,7 +50,7 @@ const HomeFoundations = () => {
     };
 
     return (
-        <article className="home-foundations">
+        <article className="home-foundations" id="foundations">
             <h2>Komu pomagamy?</h2>
             <div className="decoration"> </div>
             <section className="buttons">

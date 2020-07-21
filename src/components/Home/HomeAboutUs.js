@@ -4,7 +4,7 @@ import signature from '../../assets/Signature.svg'
 const HomeAboutUs = () => {
 
     return (
-        <article className="home-about-us">
+        <article className="home-about-us" id="about-us">
             <section className="about-us-text">
                 <h2>O nas</h2>
                 <div className="decoration"> </div>

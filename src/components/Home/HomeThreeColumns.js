@@ -22,7 +22,7 @@ const HomeThreeColumns = () => {
         updatePosition();
 
         if (position >= 160) {
-            const intervalId = setInterval(()=>{
+            var intervalId = setInterval(()=> {
                 if (countBags <= bags) {
                     setCountBags(() => countBags++)
                 }if (countFoundations <= foundations) {
@@ -30,17 +30,17 @@ const HomeThreeColumns = () => {
                 }if (countCollections <= collections) {
                     setCountCollections(() => countCollections++)
                 }
-                else {clearInterval(intervalId)}
             },40);
+        }
         return ()=> {
             clearInterval(intervalId);
+        // return () =>
+            window.removeEventListener('scroll', updatePosition);
         }
-        }
-        return () => window.removeEventListener('scroll', updatePosition);
     });
 
     return (
-        <article className="home-three-columns">
+        <article className="home-three-columns" id="three-columns">
             <section className="column-field">
                 <div>
                     <h1>{countBags}</h1>

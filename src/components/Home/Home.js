@@ -20,7 +20,7 @@ const Home = () => {
                     </section>
                     <ul className="home-menu">
                         <li><Link activeClass="active" to="header" spy={true}  smooth={true} duration={500} >Start</Link></li>
-                        <li><Link activeClass="active" to="three-columns" spy={true} offset={-100} smooth={true} duration={500} >O co chodzi?</Link></li>
+                        <li><Link activeClass="active" to="three-columns" spy={true} smooth={true} duration={500} >O co chodzi?</Link></li>
                         <li><Link activeClass="active" to="about-us" spy={true} smooth={true} duration={500} >O nas</Link></li>
                         <li><Link activeClass="active" to="foundations" spy={true} smooth={true} duration={500} >Fundacje i organizacje</Link></li>
                         <li><Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} >Kontakt</Link></li>

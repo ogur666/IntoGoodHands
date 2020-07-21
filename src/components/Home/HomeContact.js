@@ -67,7 +67,7 @@ const HomeContact = () => {
     };
 
     return (
-        <article className="home-contact">
+        <article className="home-contact" id="contact">
             <section className="contact-background"></section>
             <section className="contact-text">
                 <h2>Skontaktuj się z nami</h2>
