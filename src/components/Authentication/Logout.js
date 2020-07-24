@@ -23,7 +23,7 @@ const Logout = () => {
             </header>
             <main className="login-page">
                 <section className="contact-text">
-                    <h2>Wylogowanie nastąpiło pomyślnie!</h2>
+                    <h2>Wylogowałeś się!</h2>
                     <div className="decoration"> </div>
                     <Link className="start" to="/">Strona główna</Link>
                 </section>

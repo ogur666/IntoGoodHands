@@ -5,7 +5,7 @@ import icon2 from "../../assets/Icon-2.svg";
 import icon3 from "../../assets/Icon-3.svg";
 import icon4 from "../../assets/Icon-4.svg";
 
-const HomeThreeColumns = () => {
+const HomeThreeColumns = ({user}) => {
     const bags = 47;
     const foundations = 7;
     const collections = 22;
@@ -38,6 +38,16 @@ const HomeThreeColumns = () => {
             window.removeEventListener('scroll', updatePosition);
         }
     });
+
+    const handleCheckLogin = () => {
+        return (user != null) ?
+            <section className="info-buttons">
+                <Link to="/oddaj-rzeczy">ODDAJ RZECZY</Link>
+            </section>
+            : <section className="info-buttons">
+                <Link to="/logowanie">ODDAJ RZECZY</Link>
+            </section>
+    };
 
     return (
         <article className="home-three-columns" id="three-columns">
@@ -94,9 +104,9 @@ const HomeThreeColumns = () => {
                     <p>kurier przyjedzie w dogodnym terminie</p>
                 </div>
             </section>
-            <section className="info-buttons">
-                <Link to="/logowanie">ODDAJ RZECZY</Link>
-            </section>
+            <>
+                {handleCheckLogin()}
+            </>
         </article>
     )
 };
